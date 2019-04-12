@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">iRecommend</string>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <!-- Twitter consumer key and secret -->
+    <string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>
+    <string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>
+    <string name="cadastro_de_cliente">Cadastro de Cliente</string>
+    <string name="Login">Login</string>
+    <string name="criacao_evento">Criacao Evento</string>
+    <string name="caregamento_de_evento">Caregamento de Evento</string>
+    <string name="title_activity_tela_login">TelaLogin</string>
+    <string name="cadastro_de_clientes">Cadastro de Clientes</string>
+    <string name="cadastro_de_evento">Cadastro de Evento</string>
+    <string name="carregamento_de_eventos">Carregamento de Eventos</string>
+    <string name="login">Login</string>
+    <string name="usuario">Email</string>
+    <string name="senha">Senha</string>
+    <string name="nao_registrado">Não possui conta?</string>
+    <string name="registrar">Registrar</string>
+    <string name="nome">Nome</string>
+    <string name="data_e_hora">Data e Hora</string>
+    <string name="endereco">Endereco</string>
+    <string name="numero">Numero</string>
+    <string name="cep">CEP</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
+    <string name="pais">Pais</string>
+    <string name="deslikes">Deslikes</string>
+    <string name="likes">Likes</string>
+    <string name="title_menu_cadastrar">Cadastrar</string>
+    <string name="title_menu_cancelar">Cancelar</string>
+</resources>
