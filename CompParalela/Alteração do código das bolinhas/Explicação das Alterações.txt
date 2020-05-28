@@ -1,6 +1,0 @@
-Na classe BounceRunnableBall nós fizemos uma alteração que recebe um valor inteiro que o usuário tiver digitado.
-Esse valor é referente a quantidade de bolinhas desejadas pelo usuário. 
-O valor é passado na classe "Control" que possui o main do código alterado. 
-Cada vez que o botão "start" é apertado a quantidade digitada de bolinhas (threads) é criada.
-
-Colocar quantidade de bolinhas desejadas no console
