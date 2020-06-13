@@ -1,0 +1,13 @@
+select nome, CPF from medico where idade<40 or especialidade <> 'traumatologia';
+select * from consulta where hora> '12:00:00' and data>'2013-06-19';
+select nome, idade from paciente where cidade<> 'Florianopolis';
+select hora from consulta where data not between '2013-06-14' and '2013-06-20';
+select nome, (idade*12) as meses from paciente;
+select max(salario), min(salario) from funcionario where cidade='Florianopolis';
+select max(hora) from consulta where datac='2013-06-13';
+select avg(idade) as media from medico union select count(distinct nroa) as totalamb from ambulatorio;
+select codf, nome, salario * 0.8 from funcionario;
+select nome from funcionario where nome like'%A';
+select nome, CPF from funcionario where CPF not like '%00000%';
+select nome, especialidade from medico where nome like '_0%0';
+select codp, nome from paciente where idade>25 and doenca in ('tendinite','fratura','gripe','sarampo');

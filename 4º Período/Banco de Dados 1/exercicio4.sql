@@ -1,0 +1,11 @@
+select m.nome, m.cpf from medico as m inner join paciente as p on m.cap=c.cpf;
+select f.codf, f.nome, m.codm,m.nome from medico as m inner join funcioario as f on m.cidade=f.cidade;
+select p.codp, p.nome from paciente p join consulta c on p.codp=c.codp where c.hora>'14:00:00';
+select a.nroa, a.andar from ambulatorio a join medico m on a.nroa=m.nroa where m.especialidade='ortopedia';
+select p.cpf, p.nome from paciente p join consulta c on p.codp=c.codp where datac between '2013-06-14' and '2013-06-16';
+select m.nome, m.idade from medico m join consulta c on m.codm=c.codm join paciente p on c.codp=c.codp where p.nome='Ana';
+select m.codm, m.nome from medico m join medico m2 on m.roa=m2.nroa and m2.nome='Pedro' join consulta c on m.codm = c.codm where m.datac='2013-06-14';
+select p.nome, p.cpf,p.idade from medico m join consulta c on m.codm=c.codm join paciente p on c.codp=p.codp where m.especialidade='ortopedia' and day(c.datac)<16;
+select f.nome, f.salatio from funcionario j join funcionario f2 on f.cidade=f2.cidade and f2.nome='Carlos' and f.salario>f2.salario;
+select a.*, m.codm,m.nome from ambulatorio a left join medico m on a.nroa=m.nora;
+select m.nome, m.cpf,p.nome,p.cpf,c.datac from medico m left join consulta c on m.codm=c.codm left join paciente p on c.codp=p.codp;
