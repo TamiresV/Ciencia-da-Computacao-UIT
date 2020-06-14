@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atividade Aula 6</title>
+	<link rel="stylesheet" type="text/css" href="aula6.css">
+</head>
+<body>
+
+	<div id="div01">
+		<img id="img1" src="img1.jpg" onclick="hora1()"><p id="p01"></p>
+	</div>
+	<div id="div02">
+		<img id="img2" src="img2.jpg" onclick="hora2()"><p id="p02"></p>
+	</div>
+	<div id="div03">
+		<img id="img3" src="img3.jpg" onclick="hora3()"><p id="p03"></p>
+	</div>
+	<div id="div04">
+		<img id="img4" src="img4.jpg" onclick="hora4()"><p id="p04"></p>
+	</div>
+	<script>
+		function hora1(){
+			var x=document.getElementById("img1");
+			x.parentNode.removeChild(x);
+			document.getElementById("p01").innerHTML="Dez horas e onze minutos";
+		}
+		function hora2(){
+			var x=document.getElementById("img2");
+			x.parentNode.removeChild(x);
+			document.getElementById("p02").innerHTML="Duas horas e cinquenta minutos";
+		}
+		function hora3(){
+			var x=document.getElementById("img3");
+			x.parentNode.removeChild(x);
+			document.getElementById("p03").innerHTML="Dez horas e quarenta e quatro minutos";
+		}
+		function hora4(){
+			var x=document.getElementById("img4");
+			x.parentNode.removeChild(x);
+			document.getElementById("p04").innerHTML="Sete horas e quarenta e sete minutos";
+		}
+	</script>
+	
+	<div>
+		<label>Entre com dois valores para calcular a potencia</label>
+		<input type="text" id="n01">
+		<input type="text" id="n02">
+	</div>
+	<button id="b01" onclick="potencia()">Calcular Potencia</button>
+	<p id="res01"></p>
+	 <div>
+		<label>Entre com um numero para calcular a raiz quadrada</label>
+		<input type="text" id="n03">
+	</div>
+	<button onclick="raiz()" id="b02">Calcular Raiz Quadrada</button>
+	<p id="res02"></p>
+
+	<script>
+		function potencia(){
+			var x=document.getElementById('n01').value;
+			var y=document.getElementById('n02').value;
+			var result=Math.pow(x,y);
+			document.getElementById("res01").innerHTML=result;
+		}
+
+		function raiz(){
+			var x=document.getElementById('n03').value;
+			var result=Math.sqrt(x);
+			document.getElementById("res02").innerHTML=result;
+		}
+	</script>
+
+
+	<div >
+		<button onclick="mostraData()">Data e Hora</button>
+	</div>
+	<p id="data"></p>
+
+	<script>
+		var d=new Date();
+		function mostraData(){
+			document.getElementById("data").innerHTML=d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear()+" "+d.getHours()+":"+d.getMinutes();
+		}
+	</script>
+
+</body>
+</html>

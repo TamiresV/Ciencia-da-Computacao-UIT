@@ -1,0 +1,48 @@
+div{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#table01,#th01,#td01{
+	border:2px solid red;
+}
+
+#table02,#th02,#td02{
+	border:2px solid red;
+	border-collapse: collapse;
+}
+
+#table03,#th03,#td03{
+	border-bottom: 2px solid red;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: center;
+}
+
+#table04,#th04,#td04{
+	border-bottom: 2px solid red;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: center;
+	
+}
+#th04{
+	background-color: red;
+	color: white;
+}
+#tr04:hover{
+	background-color: lightblue;
+}
+#tr04:nth-child(even){
+	background-color: pink;
+}
+
+#table02,#table03,#table04
+{
+	width: 100%;
+}
+
+#td01,#td02,#td03,#td04
+{
+	width: 33%;
+}

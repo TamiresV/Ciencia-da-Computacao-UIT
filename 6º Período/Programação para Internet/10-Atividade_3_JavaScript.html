@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atividade Aula 3</title>
+</head>
+<body>
+	<p id="p01"></p>
+	<p id="p02"></p>
+
+	<div><img ondblclick="alterar()" src="arvore.png" id="img01"></div>
+	<button onclick="alterar()">Alterar Imagem</button>
+
+	<script>
+
+		var aluno={
+			nome:"Tamires",
+			sobrenome:"Silveira",
+			email:"taamiresvilaca@gmail.com",
+			matricula:"XXXXX",
+			curso:"Ciencia da Computacao",
+			imprimirFicha(){
+
+				return this.nome+" "+this.sobrenome+" "+this.email+" "+this.matricula;
+			},
+			mostraCurso(){
+				return this.curso;
+			}
+		}
+		document.getElementById("p01").innerHTML=aluno.imprimirFicha();
+		document.getElementById("p02").innerHTML=aluno.mostraCurso();
+
+		var inicio={
+			mensagem(){
+				return "Bem vindo";
+			}
+		}
+		window.alert(inicio.mensagem());
+
+		function alterar() {
+			document.getElementById("img01").src="astronauta.jpg";//onclick altera imagem
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 7</title>
+	<link rel="stylesheet" type="text/css" href="aula7.css">
+</head>
+<body>
+	<div id="div01">1</div>
+	<div id="div02">2</div>
+	<div id="div03">3</div>
+	<div id="div04">4</div>
+	<div id="div05">5</div>
+
+	<label>Escolha uma das cores</label><input type="number" id="inNum">
+	<p id="p01"></p>
+	<button onclick="conta()">Sorteio</button>
+
+	<div >
+		Pontuação Jogador:
+		<p id="p02"></p>
+		Pontuação:Programa
+		<p id="p03"></p>
+		Numero Sorteado:
+		<p id="sort"></p>
+	</div>
+	
+	
+
+	<script>
+		var jog=0;
+		var prog=0;
+
+		function conta(){
+			var res=sorteio();
+			if(res===0)
+			{
+				jog++;
+			}
+			else if(res===1){
+				prog++;
+				jog--;
+			}
+			if(jog===3)
+			{
+				jog=0;
+				prog=0;
+				window.alert("Jogador Ganhou");
+
+			}
+			else if(prog===3)
+			{
+				jog=0;
+				prog=0;
+				window.alert("Jogador Perdeu");
+			}
+			document.getElementById("p02").innerHTML=jog;
+			document.getElementById("p03").innerHTML=prog;
+		}
+	</script>
+	<script>
+		function sorteio() {
+			var aleatorio=Math.floor(Math.random() * 5 + 1);
+			var x =document.getElementById('inNum').value;
+
+			document.getElementById("sort").innerHTML=aleatorio;
+
+			if(aleatorio===Number(x))
+			{
+				document.getElementById("p01").innerHTML="Acertou";
+				return 0;
+				
+			}else{
+				document.getElementById("p01").innerHTML="Errou";	
+				return 1;		
+			}
+		}
+	</script>
+</body>
+</html>

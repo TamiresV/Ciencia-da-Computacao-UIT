@@ -1,0 +1,15 @@
+#h201{
+	visibility: hidden;
+}
+
+#h202{
+	display: none;
+}
+
+#li01,#h101,#img01{
+	display: inline;
+}
+
+#b01{
+	display: block;
+}

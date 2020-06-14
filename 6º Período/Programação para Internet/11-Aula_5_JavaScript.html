@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atividade aula 5</title>
+</head>
+<body>
+	<label>Nome</label> 
+	<input type="text" id="inp01">
+	<button onclick="adicionar()">Salvar</button>
+	
+	<button onclick="mostrar()">Mostrar</button>
+
+	<button onclick="ordenar()">Ordenar</button>
+
+	<p id="p01"></p>
+
+	<script>
+		var nomes=new Array();
+		function adicionar(){
+			var x=document.getElementById('inp01').value;
+			document.getElementById("nomes").innerHTML=nomes.unshift(x);
+		}
+		function mostrar(){
+			document.getElementById("p01").innerHTML=nomes.join(", ");
+		}
+		function ordenar(){
+			document.getElementById("p01").innerHTML=nomes.sort();
+		}
+	</script>
+	
+</body>
+</html>

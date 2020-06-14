@@ -1,0 +1,20 @@
+#pext1{
+	background-color: green;
+	font-size: 20px; 
+}
+
+#a1:link{
+	color: pink;
+}
+
+#a1:visited{
+	color:black ;
+}
+
+#a1:hover{
+	color:red ;
+}
+
+#a1:active{
+	color:purple ;
+}

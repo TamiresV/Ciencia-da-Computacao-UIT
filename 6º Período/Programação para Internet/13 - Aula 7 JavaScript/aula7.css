@@ -1,0 +1,33 @@
+label{
+	display: block;
+}
+#div01{
+	background-color: pink;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+#div02{
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+#div03{
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+#div04{
+	background-color: green;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+#div05{
+	background-color: tomato;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}

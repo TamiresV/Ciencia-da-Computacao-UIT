@@ -1,0 +1,12 @@
+img{
+	width: 300px;
+	height: 300px;
+}
+#div01,#div02,#div03,#div04{
+	display: inline-block;
+}
+
+#n01,#n02,#n03{
+	width: 30px;
+	height: 30px;
+}

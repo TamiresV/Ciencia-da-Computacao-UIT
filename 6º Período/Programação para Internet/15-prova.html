@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prova</title>
+	<style type="text/css">
+		#div1{
+			position: fixed;
+			right: 0px;
+			bottom: 0px;
+		}
+	</style>
+</head>
+<body id="bd1">
+	<table>
+		<tr>
+			<td><img id="cafe" src="cafe.jpg" onclick="desaparece()"></td>
+			<td><img id="cracha" src="cracha.jpg" onclick="trocaImagem()"></td>
+		</tr>
+		<tr>
+			<td><img id="lista" src="lista.jpg" onclick="texto()"><h6 id="titulo"></h6></td>
+			<td><img id="mala" src="mala.jpg" onclick="mensagem()"></td>
+		</tr>
+		<tr>
+			<td><img id="oculos" src="oculos.jpg" onclick="mudaFundo()"></td>
+			<td><img id="tv" src="tv.jpg" onclick="trocaLugar()"></td>
+		</tr>
+	</table>
+
+
+	<script>
+		var cont=0;
+		function desaparece(){
+			document.getElementById("cafe").style.display="none";
+		}
+		function trocaImagem(){
+			document.getElementById("cracha").src="cafe.jpg"
+		}
+		function texto(){
+			document.getElementById("lista").style.display="none";
+			document.getElementById("titulo").innerHTML="Tamires"
+		}
+		function mensagem(){
+			window.alert("Clicou na mala")
+		}
+		function mudaFundo(){
+			document.getElementById("bd1").style.background="red";
+			cont=cont+1;
+			if(cont>1)
+			{
+				document.getElementById("bd1").style.background="white";
+			}
+		}
+		function trocaLugar(){
+			document.getElementById("tv").style.display="none";
+			document.getElementById("img1").src="tv.jpg";
+		}
+	</script>
+
+	<div id="div1"><img id="img1"></div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treinamento</title>
+	<link rel="stylesheet" type="text/css" href="treinamento.css">
+</head>
+<body>
+	<div>
+		<table>
+			<tr>
+				<td><img id="img1" src="1.jpg"></td>
+				<td><img id="img2" src="2.jpg"></td>
+				<td><img id="img3" src="3.jpg"></td>
+				<td><img id="img4" src="4.jpg"></td>
+				<td><img id="img5" src="5.jpg"></td>
+				<td><img id="img6" src="6.jpg"></td>
+			</tr>
+			<tr>
+				<td><img id="img7" src="7.jpg"></td>
+				<td><img id="img8" src="8.jpg"></td>
+				<td><img id="img9" src="9.jpg"></td>
+				<td><img id="img10" src="10.jpg"></td>
+				<td><img id="img11" src="11.jpg"></td>
+				<td><img id="img12" src="12.jpg"></td>
+			</tr>
+			<tr>
+				<td><img id="img13" src="13.jpg"></td>
+				<td><img id="img14" src="14.jpg"></td>
+				<td><img id="img15" src="15.jpg"></td>
+				<td><img id="img16" src="16.jpg"></td>
+				<td><img id="img17" src="17.jpg"></td>
+				<td><img id="img18" src="18.jpg"></td>
+			</tr>
+			<tr>
+				<td><img id="img19" src="19.jpg"></td>
+				<td><img id="img20" src="20.jpg"></td>
+				<td><img id="img21" src="21.jpg"></td>
+				<td><img id="img22" src="22.jpg"></td>
+				<td><img id="img23" src="23.jpg"></td>
+				<td><img id="img24" src="24.jpg"></td>
+			</tr>
+		</table>
+	</div>
+
+	<p id="resultado"></p>
+	<button onclick="novaTabela()">Sortear</button>
+	<script>
+		var sorteados = [];
+		function sorteio() {
+			sorteados = [];
+   			while (sorteados.length < 24) {
+        		var aleatorio = Math.floor(Math.random() * 24);
+        		if (sorteados.indexOf(aleatorio) == -1)
+            		sorteados.push(aleatorio);
+    		}
+    		// document.getElementById("resultado").innerHTML = sorteados;
+    		return sorteados;
+		}
+	</script>
+
+
+	<script>
+		function novaTabela(){
+			var x=sorteio();
+			var i,pos, aux;
+			for(i=0;i<x.length;i++)
+			{
+				pos=i+1;
+				aux=x[i]+1;
+				document.getElementById("img"+pos).src=aux+".jpg";
+			}
+		}
+	</script>
+
+</body>
+</html>

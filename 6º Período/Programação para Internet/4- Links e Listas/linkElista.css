@@ -1,0 +1,92 @@
+#a1:link{
+	color: darkblue;
+	padding: 10px 30px;
+}
+#a1:visited{
+	color:darkcyan;
+}
+#a1:hover{
+	color: darkmagenta;
+}
+#a1:active{
+	color:darkred;
+}
+#a2:link{
+	color: tan;
+	padding: 10px 20px;
+}
+#a2:visited{
+	color:indianred;
+}
+#a2:hover{
+	color:mediumpurple;
+}
+#a2:active{
+	color:goldenrod;
+}
+#a3:link{
+	background-color: black;
+	color:orangered;
+}
+#a3:visited{
+	color:chartreuse;
+}
+#a3:hover{
+	color:khaki;
+}
+#a3:active{
+	color:maroon;
+}
+#a4:link{
+	color: brown;
+	padding: 10px 20px;
+}
+#a4:visited{
+	color:peachpuff;
+}
+#a4:hover{
+	color:aquamarine;
+	background-color: lightgreen;
+}
+#a4:active{
+	color:forestgreen;
+}
+#a5:link{
+	color:burlywood;
+	padding: 10px 20px;
+}
+#a5:visited{
+	color:darkgoldenrod;
+}
+#a5:hover{
+	color:hotpink;
+}
+#a5:active{
+	color:darkorchid;
+	background-color: lightblue;
+}
+
+#body1{
+	background-color: blue;
+}
+
+#ul01{
+	list-style-type: circle;
+	background-color: yellow;
+	text-shadow: 0.2em 0.2em blue;
+}
+#ul02{
+	list-style-type: circle;
+	background-color: red;
+	text-shadow: 0.2em 0.2em yellow;
+}
+#ul03{
+	list-style-type: circle;
+	background-color: green;
+	text-shadow: 0.2em 0.2em pink;
+}
+#ul04{
+	list-style-type: circle;
+	background-color: purple;
+	text-shadow: 0.2em 0.2em white;
+}
